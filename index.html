@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="home">
+        <header>
+            <nav class=".nav-header">
+                <!--!creamos 2 secciones una para 
+                cuando este en fondo completo
+                y otra para cuando este en 
+                menu abierto -->
+                <div class="nav-closed">
+                    <h3 id="logo">Portafolio</h3>
+                    <ul class="nav-links">
+                        <li class="nav-button">Habilidades </li>
+                        <li class="nav-button2">Biografia </li>
+                        <li class="nav-button3">Contacto </li>
+                    </ul>
+                </div>
+                <div class="nav-open">
+                    <div class="clothing">
+                        <h2 id="habilidad">Algunas habilidades que tengo</h2>
+                        <ul>
+                            <hr class="barra">
+                            <br>
+                            <li><a href="#">Diseño web</a></li>
+                            <li><a href="#">Base de datos SQL y NoSql</a></li>
+                            <li><a href="#">HTML, CSS, JS</a></li>
+                            <li><a href="#">Maquetacion en GSAP</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-images">
+                        <img src="./img/hoodie.jpeg" alt="">
+                        <img src="./img/hats.jpeg" alt="">
+                    </div>
+
+                </div>
+
+                <!--CREAMOS OTRO NAV OPEN-->
+                <div class="nav-open2">
+                    <div class="clothing">
+                        <h2 id="sobremi">sobre mi</h2>
+                        <ul>
+                            <hr class="barra">
+                            <br>
+                            <li>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ipsam temporibus ratione, labore sit consequuntur dolorem modi itaque tempora maxime aperiam dolorum voluptas? Sequi blanditiis aspernatur ea ut voluptas maxime?</p>
+                            </li>
+                        </ul>
+                        <div class="imagen">
+                            <img src="./img/chair-intro.png" alt="">
+                        </div>
+                    </div>
+                    <!--
+                <div class="nav-images">
+                    <img src="./img/hoodie.jpeg" alt="">
+                    <img src="./img/hats.jpeg" alt="">
+                </div>
+                -->
+                </div>
+                <!--Formulario de contacto-->
+                <div class="nav-open3">
+                    <form action="">
+                        <div class="titulo">
+                            <h3>De</h3>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="email" autocomplete="off" required>
+                            <label for="email" class="label-name" disabled>
+                                <span class="content-name">Email</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required>
+                            <label for="name" class="label-name">
+                                <span class="content-name">Nombre</span>
+                            </label>
+                        </div>
+                        <div class="titulo">
+                            <h3>Asunto</h3>
+                        </div>
+                        <textarea name="asunto" id="asunto" style="width: 100%; height: 50%;" placeholder="Hey..."></textarea>
+                        <div class="centra">
+                            <input class="btnenviar" type="submit" value="enviar">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <div class="icono">
+                <a href="./proyectos/proyectos.html">Siguiente <i class="fas fa-forward"></i></a>
+            </div>
+            <img class="cover" src="./img/long-cover.jpg" alt="">
+            <h1 class="cover-date">24/May/2020</h1>
+        </header>
+    </main>
+
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+
+    <!--fontawesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <!--CDN DE BARBAJS-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!--CDN DE GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
+    <!--APP JS-->
+    <script src="./app.js"></script>
+    <script src="./barba.js"></script>
+</body>
+
+</html>
